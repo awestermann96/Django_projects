@@ -1,1 +1,8 @@
+source: https://www.youtube.com/watch?v=jBzwzrDvZ18
+
 django-admin startproject {myproject}
+python manage.py startapp myapp
+
+djano app subset of django project
+
+python manage.py runserver
