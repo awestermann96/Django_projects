@@ -6,3 +6,5 @@ python manage.py startapp myapp
 djano app subset of django project
 
 python manage.py runserver
+
+root directory (BASE_DIR) contains manage.py

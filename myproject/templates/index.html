@@ -1,0 +1,15 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+
+<h1>
+    Hi {{name}} <br> You are {{age}} years old from {{nationality}}
+</h1>
+
+<h3>Input your text below:</h3>
+
+<form method="POST" action="counter">
+    {% csrf_token %}
+    <textarea name = "words1" rows = "25" cols="100"></textarea><br>
+    <input type = "submit"/>
+</form>
