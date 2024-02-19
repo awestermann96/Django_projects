@@ -8,3 +8,11 @@ djano app subset of django project
 python manage.py runserver
 
 root directory (BASE_DIR) contains manage.py
+
+add 'myapp' to myroject/settings.py INSTALLED APPS too 
+
+# migrate app whenever models.py is changed
+python manage.py makemigrations
+python manage.py migreate
+
+python manage.py createsuperuser
