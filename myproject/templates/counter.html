@@ -1,1 +1,6 @@
-There are {{n_words}} words
+
+
+{% for post in posts %}
+<h1><a href="{% url 'post' post %}">Post page</a></h1>
+{% endfor %}
+

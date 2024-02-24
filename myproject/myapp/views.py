@@ -54,6 +54,10 @@ def logout(request):
     return redirect('/')
 
 
+def post(request, pk):
+    return render(request, 'post.html', {'pk': pk})
+
+
 # Create your views here.
 def index(request):
     context = {
@@ -77,7 +81,8 @@ def index(request):
 
 
 def counter(request):
-    words = request.POST['words1']
-    n_words = len(words.split())
+    #words = request.POST['words1']
+    #n_words = len(words.split())
+    posts = [1, 2, 3, 4, 'tim', 'tom', 'john']
     return render(request, 'counter.html', 
-                  {'n_words': n_words})
+                  {'posts': posts})
