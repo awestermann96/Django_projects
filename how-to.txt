@@ -26,3 +26,5 @@ admin.site.register({model})
 # set up postgre server and change settings.py DATABASES, as well as installing Pillow and psycopg2
 python manage.py makemigrations
 python manage.py migrate
+
+ #if ever using a POST method in html, use {% csrf_token %}
