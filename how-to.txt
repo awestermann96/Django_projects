@@ -29,3 +29,8 @@ python manage.py makemigrations
 python manage.py migrate
 
  #if ever using a POST method in html, use {% csrf_token %}
+
+ # rest API
+ pip install djangorestframework
+
+ # add 'rest_framework' to INSTALLED APPS
